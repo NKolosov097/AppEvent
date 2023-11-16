@@ -1,0 +1,47 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  max-width: 1440px;
+  left: calc(50% - 720px);
+  right: 0;
+  height: 50px;
+  border-radius: 0 0 20px 20px;
+  padding: 15px;
+
+  font-size: 18px;
+  color: var(--light);
+  background: var(--dark);
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  color: var(--light);
+  letter-spacing: 1px;
+
+  text-decoration: none;
+  background-image: linear-gradient(var(--light), var(--light));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.header a:first-child {
+  width: 200px;
+}
+
+.header a:last-child {
+  width: 200px;
+}
+
+.header a:hover {
+  background-size: 100% 2px;
+}
