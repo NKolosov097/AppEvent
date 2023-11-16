@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
+import { HashRouter } from "react-router-dom"
 import { createRoot } from "react-dom/client"
 import "./index.css"
 import { App } from "./App"
@@ -17,7 +17,7 @@ let persitor = persistStore(store)
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persitor}>
           <QueryClientProvider client={queryClient}>
@@ -25,6 +25,6 @@ root.render(
           </QueryClientProvider>
         </PersistGate>
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 )
