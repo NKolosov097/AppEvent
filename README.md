@@ -14,6 +14,11 @@
 
 <hr>
 
+<h3 align="start">Description</h3>
+  <h4>The application where I implemented product cards with the ability to add them to the cart. When the page is reloaded, the contents of the trash are saved</h4>
+
+<hr>
+
 <details>
   <summary><h3>Local start of aplication</h3></summary>
   <ol>
