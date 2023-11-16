@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { useAppSelector } from "../../hooks"
 import { Card } from "../../components/Card/Card"
@@ -6,12 +6,8 @@ import { Toaster } from "react-hot-toast"
 import styles from "./Home.module.css"
 
 export const Home = (): React.JSX.Element => {
-  const [isOpened, setIsOpened] = useState<boolean>(false)
+  const [isOpened, setIsOpened] = useState<boolean>(true)
   const { cards } = useAppSelector((state) => state.cards)
-
-  useEffect(() => {
-    setIsOpened(true)
-  }, [])
 
   const variants = {
     open: {
