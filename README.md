@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://nkolosov097.github.io/AppEventr" target="_blank">AppEvent</a></h1>
+<h1 align="center"><a href="https://nkolosov097.github.io/AppEvent" target="_blank">AppEvent</a></h1>
 
 <h3 align="start">Used stack</h3>
 <h4>
