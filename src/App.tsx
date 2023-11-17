@@ -7,6 +7,7 @@ import { Header } from "./components/Header/Header"
 import { paths } from "./paths"
 import { Home } from "./pages/Home/Home"
 import { Cart } from "./pages/Cart/Cart"
+import { REACT_APP_SERVER_API } from "./consts"
 
 export function App(): React.JSX.Element {
   const dispatch = useAppDispatch()
@@ -19,9 +20,7 @@ export function App(): React.JSX.Element {
   } = useQuery(
     "cards",
     async () =>
-      await fetch(`${process.env.REACT_APP_SERVER_API}`).then((res) =>
-        res.json()
-      ),
+      await fetch(`${REACT_APP_SERVER_API}`).then((res) => res.json()),
     {
       retry: false,
       staleTime: Infinity,
